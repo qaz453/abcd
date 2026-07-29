@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录</title>
+</head>
+<body>
+<script>
+let user=document.createElement('input')
+user.placeholder='账号';
+let pwd=document.createElement('input');
+pwd.placeholder='密码';
+pwd.type='password';
+let btn=document.createElement('button');
+btn.innerText='登录';
+btn.onclick=()=>{
+if(user.value=='彭紫阳'&&pwd.value=='123456'){
+location.href='text.html'
+}else{
+alert('账号或密码错误')
+}
+};
+document.body.append(user,pwd,btn)
+</script>
+</body>
+</html>
